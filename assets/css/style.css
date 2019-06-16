@@ -1,0 +1,106 @@
+body{
+	font-size: 13px;
+}
+/*****************************HEADER*********************/
+/********NAV********/
+nav{
+	box-shadow: none;
+	
+}
+nav li a{
+	color: black;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	
+}
+header{
+	height: 100vh;
+	position: relative;
+	background-image: url(../img/barbershop.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-color:whitesmoke;
+	background-blend-mode: screen;
+}
+.image-fit{
+	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	
+}
+.brand-logo img{
+	
+	
+}
+.logo-intro{
+	position: absolute;
+	bottom: 10%;
+	height: 500px;
+	left:32%;
+}
+#scroll-down{
+	position:absolute;
+	bottom: 0;
+	left:50%;
+	color: white;
+}
+/****** MAIN ********/
+.section-content {
+	font-size: 2rem;
+	font-family: 'Amiri', serif;
+}
+.section-title{
+	font-family: 'Leckerli One', cursive;
+}
+.service .section-content td{
+	font-size: 1.5rem;
+}
+.itallic{
+	font-style: italic;
+	
+}
+.contact h3 {
+	font-size: 4rem;
+}
+.contact p{
+	font-size: 1.5rem;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+.box:nth-child(1){
+	grid-column: span 2;
+}
+.box:nth-child(3){
+	grid-column: span 3;
+}
+.box:nth-child(3){
+	background-image: url(../img/1.jpg);
+}
+.box img{
+	width: 100%;
+	height: auto;
+	
+	
+}
+.social::after{
+	content: '';
+	width: 100px;
+	border-bottom: 1px solid red;
+}
+.social img{
+	width:30px;
+	fill: #a67c00;
+}
+/******FOOTER*********/
