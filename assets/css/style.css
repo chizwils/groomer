@@ -1,19 +1,40 @@
 body{
 	font-size: 13px;
 }
+.cta{
+	background-color: transparent;
+	border: 1px solid gold;
+	color: black;
+	width: 100px;
+}
+.cta:hover, .sidenav .cta:hover{
+	background-color: transparent!important;
+}
 /*****************************HEADER*********************/
 /********NAV********/
 nav{
 	box-shadow: none;
 	
+	
 }
-nav li a{
+nav li a, .sidenav a{
 	color: black;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	
 }
+.sidenav{
+	background-color: transparent;
+}
+.sidenav a {
+	color: white!important;
+}
+.sidenav-trigger{
+	color: gold;
+}
+
+
 header{
 	height: 100vh;
 	position: relative;
@@ -38,13 +59,14 @@ header{
 	
 }
 .brand-logo img{
-	
+	height: 80px;
+	padding: 10px;
 	
 }
 .logo-intro{
 	position: absolute;
 	bottom: 10%;
-	height: 500px;
+	height: 80vh;
 	left:32%;
 }
 #scroll-down{
@@ -69,7 +91,8 @@ header{
 	
 }
 .contact h3 {
-	font-size: 4rem;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
 }
 .contact p{
 	font-size: 1.5rem;
@@ -104,3 +127,15 @@ header{
 	fill: #a67c00;
 }
 /******FOOTER*********/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	.logo-intro{
+	position: absolute;
+	bottom: 10%;
+	height: 55vh;
+left: 0;
+}
+} 
+

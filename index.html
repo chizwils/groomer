@@ -7,10 +7,18 @@
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Leckerli+One&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+	<script>
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+		});
+	</script>
 
 	<link rel='stylesheet' href="assets/css/style.css" />
 	<title>Groomers-Home</title>
@@ -23,13 +31,19 @@
 			<nav class="transparent">
 				<div class="nav-wrapper">
 					<a href="#" class="brand-logo center"></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
 						<li><a href="sass.html">Product</a></li>
 						<li><a href="badges.html">Gallery</a></li>
-						<li><a href="collapsible.html" class="btn">Book</a></li>
+						<li><a href="collapsible.html" class="btn cta">Book</a></li>
 					</ul>
 				</div>
 			</nav>
+			<ul id="mobile-demo" class="sidenav">
+				<li><a href="sass.html">Product</a></li>
+				<li><a href="badges.html">Gallery</a></li>
+				<li><a href="collapsible.html" class="btn cta">Book</a></li>
+			</ul>
 			<img class="logo-intro" src="assets/img/logo3.svg">
 			<div id='scroll-down'> Scroll</div>
 
@@ -104,6 +118,7 @@
 					<h3 class="itallic">123-456-7890</h3>
 					<p class="itallic">3503 EAGLE ST</p>
 					<p class="itallic">Houston, Tx 77004</p>
+					<button class="btn cta">BOOk</button>
 					<ul class="social">
 						<li><a><img src="assets/img/facebook.svg"></a></li>
 						<li><a> <img src="assets/img/instagram.svg"></a></li>
