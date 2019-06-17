@@ -31,7 +31,7 @@ nav li a, .sidenav a{
 	color: white!important;
 }
 .sidenav-trigger{
-	color: gold;
+	color: gold;s
 }
 
 
@@ -133,9 +133,9 @@ header{
 @media only screen and (max-width: 600px) {
 	.logo-intro{
 	position: absolute;
-	bottom: 10%;
+	bottom: 30%;
 	height: 55vh;
-left: 0;
+left: 2%;
 }
 } 
 
